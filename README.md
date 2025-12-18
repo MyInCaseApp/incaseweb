@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="50%" align="center" src="./src/assets/logo_light.png"/> 
+  <img width="50%" height="300px" align="center" src="./src/assets/logo_light.png"/> 
 </p>
 
 This is the frontend for MyIncaseApp landing page
