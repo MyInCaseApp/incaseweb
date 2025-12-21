@@ -1,8 +1,10 @@
-export function formatAmount(amount) {
-  if (!amount) {
-    return 0;
+export function formatAmount(amount: number | string): string {
+  if (amount === null || amount === undefined || amount === "") {
+    return "0";
   }
-  let [integerPart, decimalPart] = amount.toString().split(".");
-  integerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  return decimalPart ? `${integerPart}.${decimalPart}` : integerPart;
+
+  const [integerPart, decimalPart] = amount.toString().split(".");
+  const formattedInteger = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+  return decimalPart ? `${formattedInteger}.${decimalPart}` : formattedInteger;
 }
