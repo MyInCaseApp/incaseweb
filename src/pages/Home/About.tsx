@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import about from "../../assets/about.png";
 
 export default function About() {
@@ -13,9 +14,14 @@ export default function About() {
         <p className="leading-[140%] tracking-[-2%] text-dark font-poppins text-center lg:text-xl font-medium mt-10">
           What happens when you need that document tomorrow?
         </p>
-        <button className="bg-dark rounded-full leading-[140%] tracking-[-2%] text-white py-4 px-6 mt-7 mx-auto flex font-poppins text-center">
-          <p>Read more about InCase</p>
-        </button>
+        <NavLink
+          to="/about"
+          className="rounded-full w-fit h-fit flex mt-7 mx-auto"
+        >
+          <button className="bg-dark cursor-pointer rounded-full leading-[140%] tracking-[-2%] text-white py-4 px-6 flex font-poppins text-center">
+            <p>Read more about InCase</p>
+          </button>
+        </NavLink>
       </div>
       <div className="lg:mt-55.5 mt-30">
         <div className="lg:w-121 w-[306.42px] lg:h-104.25 h-66 mx-auto">

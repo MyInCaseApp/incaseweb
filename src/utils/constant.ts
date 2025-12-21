@@ -1,3 +1,43 @@
+import teens from "../assets/teens.jpg";
+import homeowner from "../assets/homeowner.jpg";
+import professionals from "../assets/professionals.jpg";
+import carowner from "../assets/carowner.jpg";
+import organization from "../assets/organization.jpg";
+import family from "../assets/family.jpg";
+
+export const whyChooseUs = [
+  {
+    img: teens,
+    name: "For Students and Graduates",
+    text: "Protect your educational journey. Your WAEC certificate represents years of hard work. Your university degree opens professional doors. Keep them safe, organized, and ready when opportunity knocks.",
+  },
+  {
+    img: homeowner,
+    name: "For Home and Property Owners",
+    text: "Your house documents represent your biggest investment. Your C of O secures your family’s future. Don’t risk damage, loss, or unauthorized access to these critical papers.",
+  },
+  {
+    img: professionals,
+    name: "For Professionals",
+    text: "Keep your certificates, licenses, contracts, and essential work documents organized and secure. Whether you're applying for opportunities or handling client records, InCase ensures everything you need is always within reach — no searching, no stress.",
+  },
+  {
+    img: carowner,
+    name: "For Car Owners",
+    text: "Your car papers are essential for daily life—from police checks to buyer verification. Keep them accessible yet secure, avoiding fines and legal complications.",
+  },
+  {
+    img: family,
+    name: "For Families",
+    text: "Your Will protects your legacy. Birth and marriage certificates verify your family’s identity. Medical records could save lives in emergencies. Keep them safe for generations",
+  },
+  {
+    img: organization,
+    name: "For Organizations",
+    text: "Your house documents represent your biggest investment. Your C of O secures your family’s future. Don’t risk damage, loss, or unauthorized access to these critical papers.",
+  },
+];
+
 export const FaqsBank = {
   getStarted: [
     {
@@ -260,3 +300,575 @@ export const FaqsBank = {
     },
   ],
 };
+
+export const dataRetentionLinks = [
+  {
+    name: "Our Commitment",
+    id: "commitment",
+  },
+  {
+    name: "How Long We Keep Your Data",
+    id: "data",
+  },
+  {
+    name: "Data Deletion",
+    id: "deletion",
+  },
+  {
+    name: "Legal Requirements",
+    id: "legal",
+  },
+  {
+    name: "Technical Safeguards",
+    id: "technical",
+  },
+  {
+    name: "Your Rights",
+    id: "rights",
+  },
+  {
+    name: "Changes to This Policy",
+    id: "policy",
+  },
+  {
+    name: "Contact Us",
+    id: "contact",
+  },
+  {
+    name: "Additional Information",
+    id: "info",
+  },
+];
+
+export const dataRetentionData = [
+  {
+    name: "1. Our Commitment",
+    id: "commitment",
+    description:
+      "At InCase, we believe in transparent data practices. This Data Retention Policy explains how long we keep your information and why. We only retain data for as long as necessary to provide our services and comply with legal obligations.",
+    sub: [],
+  },
+
+  {
+    name: "2. How Long We Keep Your Data",
+    id: "data",
+    description: "",
+    sub: [
+      {
+        name: "Account Information",
+        sub: "",
+        list: [
+          "Active Accounts: Retained while your account is active",
+          "Inactive Accounts: Deleted after 24 months of inactivity",
+          "Account Deletion: Completed within 30 days of your request",
+        ],
+      },
+      {
+        name: "Your Documents",
+        sub: "",
+        list: [
+          "Stored Documents: Available while your account is active",
+          "Deleted Documents: Permanently removed within 30 days",
+          "Shared Documents: Access revoked when you delete them",
+        ],
+      },
+      {
+        name: "Notarization Records",
+        sub: "",
+        list: [
+          "Notarization records are kept as required by law",
+          "Notarization Certificates: Stored with your documents",
+          "Verification Records: Maintained for legal compliance",
+        ],
+      },
+      {
+        name: "Payment Information",
+        sub: "",
+        list: [
+          "Transaction Records: 3 years for accounting and tax purposes",
+          "Billing History: Available in your account while active",
+          "Payment Methods: Securely stored only while active",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "3. Data Deletion",
+    id: "deletion",
+    description: "",
+    sub: [
+      {
+        sub: "Your Control",
+        name: "You can:",
+        list: [
+          "Download your documents anytime",
+          "Delete individual documents immediately",
+          "Request full account deletion",
+          "Export your data before closing account",
+        ],
+      },
+      {
+        sub: "Our Process",
+        name: "When you delete data:",
+        list: [
+          "Progressive removal from backup systems",
+          "Immediate removal from active systems",
+          "Secure erasure from all storage locations",
+          "Confirmation when process is complete",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "4. Legal Requirements",
+    id: "legal",
+    description: "",
+    sub: [
+      {
+        sub: "Required Retention",
+        name: "We retain certain data to:",
+        list: [
+          "Comply with Nigerian data protection laws",
+          "Meet notarization legal requirements",
+          "Fulfill tax and accounting obligations",
+          "Support legal proceedings if required",
+        ],
+      },
+      {
+        sub: "Legal Holds",
+        name: "If required by law, we may preserve data for:",
+        list: [
+          "Ongoing legal proceedings",
+          "Government investigations",
+          "Regulatory requirements",
+          "Law enforcement requests",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "5. Technical Safeguards",
+    id: "technical",
+    description: "",
+    sub: [
+      {
+        sub: "",
+        name: "Secure Storage",
+        list: [
+          "Encryption of all stored data",
+          "Regular security assessments",
+          "Access controls and monitoring",
+          "Secure data center facilities",
+        ],
+      },
+      {
+        sub: "",
+        name: "Secure Deletion",
+        list: [
+          "Cryptographic erasure methods",
+          "Multiple storage location cleanup",
+          "Verification of deletion completion",
+          "Documentation of disposal processes",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "6. Your Rights",
+    id: "rights",
+    description: "",
+    sub: [
+      {
+        sub: "Access and Control",
+        name: "You have the right to:",
+        list: [
+          "Know what data we have about you",
+          "Access your personal information",
+          "Correct inaccurate data",
+          "Delete your data (with some legal exceptions)",
+          "Receive your data in portable format",
+        ],
+      },
+      {
+        sub: "How to Exercise Your Rights",
+        name: "Contact our Data Protection Officer:",
+        list: [
+          "Email: dpo@InCase.ng",
+          "Response Time: Within 15 days",
+          "Cost: No charge for standard requests",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "7. Changes to This Policy",
+    id: "policy",
+    description: "",
+    sub: [
+      {
+        sub: "",
+        name: "We may update this policy to reflect:",
+        list: [
+          "Changes in our services",
+          "Legal and regulatory requirements",
+          "Technology improvements",
+          "User feedback",
+        ],
+      },
+      {
+        sub: "",
+        name: "We will notify you of significant changes through:",
+        list: [
+          "In-app notifications",
+          "Email communication",
+          "Policy date updates",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "8. Contact Us",
+    id: "contact",
+    description: "",
+    sub: [
+      {
+        sub: "",
+        name: "For questions about data retention:",
+        list: [
+          "Data Protection Officer: dpo@InCase.ng",
+          "General Support: support@InCase.ng",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "9. Additional Information",
+    id: "info",
+    description: "",
+    sub: [
+      {
+        sub: "Backup Systems",
+        name: "",
+        list: [
+          "Data backups retained for 90 days",
+          "Progressive deletion from all backups",
+          "Encrypted and secure backup storage",
+        ],
+      },
+      {
+        sub: "System Logs",
+        name: "",
+        list: [
+          "Access and security logs: 12 months",
+          "Performance data: 6 months",
+          "Analytics data: 25 months",
+        ],
+      },
+    ],
+  },
+];
+
+export const policyLinks = [
+  {
+    name: "Introduction",
+    id: "intro",
+  },
+  {
+    name: "Information we collect",
+    id: "info",
+  },
+  {
+    name: "How we use your information",
+    id: "how",
+  },
+  {
+    name: "Data sharing and disclosure",
+    id: "data",
+  },
+  {
+    name: "Data securely",
+    id: "secure",
+  },
+  {
+    name: "User rights and choices",
+    id: "user",
+  },
+  {
+    name: "International data transfers",
+    id: "international",
+  },
+  {
+    name: "Children’s privacy",
+    id: "children",
+  },
+  {
+    name: "Third party services",
+    id: "third",
+  },
+  {
+    name: "Cookies and tracking",
+    id: "cookies",
+  },
+  {
+    name: "Policy updates",
+    id: "policy",
+  },
+  {
+    name: "Contact information",
+    id: "contact",
+  },
+  {
+    name: "Jurisdiction and law",
+    id: "jurisdiction",
+  },
+  {
+    name: "Additional provisions",
+    id: "additional",
+  },
+  {
+    name: "Consent",
+    id: "consent",
+  },
+];
+
+export const policyData = [
+  {
+    name: "1. Our Commitment",
+    id: "commitment",
+    description:
+      "At InCase, we believe in transparent data practices. This Data Retention Policy explains how long we keep your information and why. We only retain data for as long as necessary to provide our services and comply with legal obligations.",
+    sub: [],
+  },
+
+  {
+    name: "2. How Long We Keep Your Data",
+    id: "data",
+    description: "",
+    sub: [
+      {
+        name: "Account Information",
+        sub: "",
+        list: [
+          "Active Accounts: Retained while your account is active",
+          "Inactive Accounts: Deleted after 24 months of inactivity",
+          "Account Deletion: Completed within 30 days of your request",
+        ],
+      },
+      {
+        name: "Your Documents",
+        sub: "",
+        list: [
+          "Stored Documents: Available while your account is active",
+          "Deleted Documents: Permanently removed within 30 days",
+          "Shared Documents: Access revoked when you delete them",
+        ],
+      },
+      {
+        name: "Notarization Records",
+        sub: "",
+        list: [
+          "Notarization records are kept as required by law",
+          "Notarization Certificates: Stored with your documents",
+          "Verification Records: Maintained for legal compliance",
+        ],
+      },
+      {
+        name: "Payment Information",
+        sub: "",
+        list: [
+          "Transaction Records: 3 years for accounting and tax purposes",
+          "Billing History: Available in your account while active",
+          "Payment Methods: Securely stored only while active",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "3. Data Deletion",
+    id: "deletion",
+    description: "",
+    sub: [
+      {
+        sub: "Your Control",
+        name: "You can:",
+        list: [
+          "Download your documents anytime",
+          "Delete individual documents immediately",
+          "Request full account deletion",
+          "Export your data before closing account",
+        ],
+      },
+      {
+        sub: "Our Process",
+        name: "When you delete data:",
+        list: [
+          "Progressive removal from backup systems",
+          "Immediate removal from active systems",
+          "Secure erasure from all storage locations",
+          "Confirmation when process is complete",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "4. Legal Requirements",
+    id: "legal",
+    description: "",
+    sub: [
+      {
+        sub: "Required Retention",
+        name: "We retain certain data to:",
+        list: [
+          "Comply with Nigerian data protection laws",
+          "Meet notarization legal requirements",
+          "Fulfill tax and accounting obligations",
+          "Support legal proceedings if required",
+        ],
+      },
+      {
+        sub: "Legal Holds",
+        name: "If required by law, we may preserve data for:",
+        list: [
+          "Ongoing legal proceedings",
+          "Government investigations",
+          "Regulatory requirements",
+          "Law enforcement requests",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "5. Technical Safeguards",
+    id: "technical",
+    description: "",
+    sub: [
+      {
+        sub: "",
+        name: "Secure Storage",
+        list: [
+          "Encryption of all stored data",
+          "Regular security assessments",
+          "Access controls and monitoring",
+          "Secure data center facilities",
+        ],
+      },
+      {
+        sub: "",
+        name: "Secure Deletion",
+        list: [
+          "Cryptographic erasure methods",
+          "Multiple storage location cleanup",
+          "Verification of deletion completion",
+          "Documentation of disposal processes",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "6. Your Rights",
+    id: "rights",
+    description: "",
+    sub: [
+      {
+        sub: "Access and Control",
+        name: "You have the right to:",
+        list: [
+          "Know what data we have about you",
+          "Access your personal information",
+          "Correct inaccurate data",
+          "Delete your data (with some legal exceptions)",
+          "Receive your data in portable format",
+        ],
+      },
+      {
+        sub: "How to Exercise Your Rights",
+        name: "Contact our Data Protection Officer:",
+        list: [
+          "Email: dpo@InCase.ng",
+          "Response Time: Within 15 days",
+          "Cost: No charge for standard requests",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "7. Changes to This Policy",
+    id: "policy",
+    description: "",
+    sub: [
+      {
+        sub: "",
+        name: "We may update this policy to reflect:",
+        list: [
+          "Changes in our services",
+          "Legal and regulatory requirements",
+          "Technology improvements",
+          "User feedback",
+        ],
+      },
+      {
+        sub: "",
+        name: "We will notify you of significant changes through:",
+        list: [
+          "In-app notifications",
+          "Email communication",
+          "Policy date updates",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "8. Contact Us",
+    id: "contact",
+    description: "",
+    sub: [
+      {
+        sub: "",
+        name: "For questions about data retention:",
+        list: [
+          "Data Protection Officer: dpo@InCase.ng",
+          "General Support: support@InCase.ng",
+        ],
+      },
+    ],
+  },
+
+  {
+    name: "9. Additional Information",
+    id: "info",
+    description: "",
+    sub: [
+      {
+        sub: "Backup Systems",
+        name: "",
+        list: [
+          "Data backups retained for 90 days",
+          "Progressive deletion from all backups",
+          "Encrypted and secure backup storage",
+        ],
+      },
+      {
+        sub: "System Logs",
+        name: "",
+        list: [
+          "Access and security logs: 12 months",
+          "Performance data: 6 months",
+          "Analytics data: 25 months",
+        ],
+      },
+    ],
+  },
+];

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import AllFaqs from "./AllFaqs";
+import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 
 type FaqTab =
   | "getStarted"
@@ -21,11 +23,30 @@ const faqTabs: { label: string; tab: FaqTab }[] = [
 export default function FAQ() {
   const [tab, setTab] = useState<FaqTab>("getStarted");
 
+  const containerVariants: Variants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.5,
+      },
+    },
+  };
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
   return (
     <section className="lg:px-31.75 px-5.25 py-28 text-center">
-      <h2 className="lg:text-[48px] text-[32px] text-dark font-medium font-fontspringm lg:w-135.25 mx-auto leading-[110%] tracking-[-5%]">
-        Frequently Asked Questions
-      </h2>
+      <motion.div variants={containerVariants} initial="hidden" animate="show">
+        <motion.h2
+          variants={itemVariants}
+          className="lg:text-[48px] text-[32px] text-dark font-medium font-fontspringm lg:w-135.25 mx-auto leading-[110%] tracking-[-5%]"
+        >
+          Frequently Asked Questions
+        </motion.h2>
+      </motion.div>
 
       <div className="my-11.25 font-fontspring text-sm leading-[120%] tracking-[-2%]">
         <div className="hidden lg:flex flex-wrap justify-center gap-1">
@@ -71,7 +92,7 @@ function FaqButton({ label, tab, active, setTab }: FaqButtonProps) {
   return (
     <button
       onClick={() => setTab(tab)}
-      className={`px-4.5 py-3 cursor-pointer transition-colors ${
+      className={`px-4.5 py-3 cursor-pointer transition-colors outline-none ${
         active === tab
           ? "text-[#227BDA] font-semibold"
           : "font-medium text-dark hover:text-[#227BDA]"

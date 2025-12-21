@@ -7,6 +7,12 @@ import BackToTop from "./components/BackToTop";
 import PageWrapper from "./components/PageWrapper";
 import Home from "./pages/Home/Index";
 import FAQ from "./pages/FAQ/Index";
+import Contact from "./pages/Contact/Index";
+import About from "./pages/About/Index";
+import DataRetention from "./pages/Informations/Index";
+import PrivacyPolicy from "./pages/Informations/Policy";
+import Terms from "./pages/Informations/Terms";
+import Cookies from "./pages/Informations/Cookies";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -30,6 +36,60 @@ function AnimatedRoutes() {
             element={
               <PageWrapper>
                 <FAQ />
+              </PageWrapper>
+            }
+          />
+          <Route
+            index
+            path="/contact-us"
+            element={
+              <PageWrapper>
+                <Contact />
+              </PageWrapper>
+            }
+          />
+          <Route
+            index
+            path="/about"
+            element={
+              <PageWrapper>
+                <About />
+              </PageWrapper>
+            }
+          />
+          <Route
+            index
+            path="/data-retention-policy"
+            element={
+              <PageWrapper>
+                <DataRetention />
+              </PageWrapper>
+            }
+          />
+          <Route
+            index
+            path="/privacy-policy"
+            element={
+              <PageWrapper>
+                <PrivacyPolicy />
+              </PageWrapper>
+            }
+          />
+          <Route
+            index
+            path="/terms-of-service"
+            element={
+              <PageWrapper>
+                <Terms />
+              </PageWrapper>
+            }
+          />
+          <Route
+            index
+            path="/cookies-policy"
+            element={
+              <PageWrapper>
+                <Cookies />
               </PageWrapper>
             }
           />
