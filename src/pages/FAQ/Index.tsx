@@ -9,6 +9,8 @@ type FaqTab =
   | "notarization"
   | "technical"
   | "account"
+  | "business"
+  | "troubleshooting"
   | "legal";
 
 const faqTabs: { label: string; tab: FaqTab }[] = [
@@ -17,6 +19,8 @@ const faqTabs: { label: string; tab: FaqTab }[] = [
   { label: "Notarization Services", tab: "notarization" },
   { label: "Technical Questions", tab: "technical" },
   { label: "Account and Billing", tab: "account" },
+  { label: "Business and Enterprise", tab: "business" },
+  { label: "Troubleshooting", tab: "troubleshooting" },
   { label: "Legal and Compliance", tab: "legal" },
 ];
 

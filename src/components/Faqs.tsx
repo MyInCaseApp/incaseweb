@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { LuCircleMinus, LuCirclePlus } from "react-icons/lu";
 import { motion, AnimatePresence } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 export default function Faqs() {
   const [selected, setSelected] = useState<number | null>(null);
@@ -10,37 +11,39 @@ export default function Faqs() {
       id: 0,
       questions: "What is InCase?",
       answers:
-        "InCase is a secure digital vault for storing your important documents, notes, videos, and audio files. Everything is encrypted and accessible only to you",
+        "Incase is a secure digital vault that lets you store, organize, and legally notarize your important documents using your smartphone. Think of it as a bank vault for your digital documents.",
+      list: [],
     },
     {
       id: 1,
-      questions: "Is the Free Forever Plan really free?",
-      answers: "lorem ipsum...",
+      questions: "Is Incase really free to start?",
+      answers:
+        "Yes! Our Basic Plan is completely free with 1GB storage and capacity for 5 documents. No credit card required to start.",
+      list: [],
     },
     {
       id: 2,
-      questions: "When do I need a subscription?",
-      answers: "lorem ipsum...",
+      questions: "What types of documents can I store?",
+      answers: "You can store:",
+      list: [
+        "Educational certificates: WAEC certificates, university degrees, transcripts",
+        "Property documents: C of O, survey plans, deed documents",
+        "Personal documents: Birth certificates, marriage certificates, wills",
+        "Vehicle documents: Car papers, insurance documents",
+        "Business documents: Contracts, agreements, registration papers",
+        "Media files: Videos, audio recordings, photos",
+      ],
     },
     {
       id: 3,
-      questions: "How secure is my data on InCase?",
-      answers: "lorem ipsum...",
-    },
-    {
-      id: 4,
-      questions: "Can I notarize videos and audio files?",
-      answers: "lorem ipsum...",
-    },
-    {
-      id: 5,
-      questions: "What types of documents can I store?",
-      answers: "lorem ipsum...",
-    },
-    {
-      id: 6,
-      questions: "Can I access my vault on multiple devices?",
-      answers: "lorem ipsum...",
+      questions: "How do I get started?",
+      answers: "The entire setup process takes less than 5 minutes.",
+      list: [
+        "Download the Incase app from App Store or Google Play",
+        "Create your free account",
+        "Start uploading your important documents",
+        "Get documents notarized if needed",
+      ],
     },
   ];
 
@@ -94,12 +97,27 @@ export default function Faqs() {
                   <p className="pt-3 leading-[150%] tracking-[-2%] text-sm font-poppins text-white">
                     {item.answers}
                   </p>
+                  <ul className="list-disc pl-5">
+                    {item.list?.map((list, i) => (
+                      <li className="" key={i}>
+                        {list}
+                      </li>
+                    ))}
+                  </ul>
                 </motion.div>
               )}
             </AnimatePresence>
           </motion.div>
         );
       })}
+      <div>
+        <NavLink
+          to="/faqs"
+          className="flex items-center w-fit mx-auto font-fredoka text-[#227BDA] mt-11"
+        >
+          View more FAQs
+        </NavLink>
+      </div>
     </div>
   );
 }

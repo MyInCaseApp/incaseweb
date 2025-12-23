@@ -44,259 +44,380 @@ export const FaqsBank = {
       id: 0,
       questions: "What is InCase?",
       answers:
-        "InCase is a secure digital vault that allows you to store, organize, and protect important documents, notes, videos, and audio files in one place.",
+        "Incase is a secure digital vault that lets you store, organize, and legally notarize your important documents using your smartphone. Think of it as a bank vault for your digital documents.",
+      list: [],
     },
     {
       id: 1,
-      questions: "How do I create an account?",
+      questions: "Is Incase really free to start?",
       answers:
-        "You can create an account by signing up with your email address and setting a secure password. Registration takes less than a minute.",
+        "Yes! Our Basic Plan is completely free with 1GB storage and capacity for 5 documents. No credit card required to start.",
+      list: [],
     },
     {
       id: 2,
-      questions: "Is InCase available on mobile?",
-      answers:
-        "Yes, InCase works across desktop, tablet, and mobile devices, allowing you to access your vault anytime, anywhere.",
+      questions: "What types of documents can I store?",
+      answers: "You can store:",
+      list: [
+        "Educational certificates: WAEC certificates, university degrees, transcripts",
+        "Property documents: C of O, survey plans, deed documents",
+        "Personal documents: Birth certificates, marriage certificates, wills",
+        "Vehicle documents: Car papers, insurance documents",
+        "Business documents: Contracts, agreements, registration papers",
+        "Media files: Videos, audio recordings, photos",
+      ],
     },
     {
       id: 3,
-      questions: "Do I need technical knowledge to use InCase?",
-      answers:
-        "No technical skills are required. InCase is designed with a simple and intuitive interface for all users.",
-    },
-    {
-      id: 4,
-      questions: "Can I upload multiple files at once?",
-      answers:
-        "Yes, you can upload multiple documents, videos, or audio files simultaneously to save time.",
-    },
-    {
-      id: 5,
-      questions: "Is there a limit to file size?",
-      answers:
-        "File size limits depend on your subscription plan. Higher plans allow larger uploads and more storage.",
-    },
-    {
-      id: 6,
-      questions: "Can I organize my files?",
-      answers:
-        "Yes, files can be organized into folders and tagged for easy searching and retrieval.",
+      questions: "How do I get started?",
+      answers: "The entire setup process takes less than 5 minutes.",
+      list: [
+        "Download the Incase app from App Store or Google Play",
+        "Create your free account",
+        "Start uploading your important documents",
+        "Get documents notarized if needed",
+      ],
     },
   ],
 
   security: [
     {
       id: 0,
-      questions: "How is my data protected?",
-      answers:
-        "All data stored on InCase is protected using industry-standard encryption both at rest and in transit.",
+      questions: "How secure are my documents?",
+      answers: " We use bank-level security including:",
+      list: [
+        "End-to-end encryption (your documents are encrypted before they leave your device)",
+        "Secure data centers with 24/7 monitoring",
+        "Regular security audits and updates",
+        "Multi-layered access controls",
+      ],
     },
     {
       id: 1,
-      questions: "Can anyone else access my files?",
+      questions: "Can Incase staff see my documents?",
       answers:
-        "No. Only you have access to your vault unless you explicitly choose to share specific files.",
+        "No. We built Incase with a zero-knowledge architecture, meaning even our engineers cannot access your documents. Only you hold the keys to your data.",
+      list: [],
     },
     {
       id: 2,
-      questions: "What happens if I forget my password?",
+      questions: "What happens if I lose my phone?",
       answers:
-        "You can reset your password securely using your registered email address.",
+        "Your documents remain completely safe. Simply log in from another device using your credentials. We recommend enabling two-factor authentication for extra security.",
+      list: [],
     },
     {
       id: 3,
-      questions: "Does InCase track my activities?",
+      questions: "Is my data backed up?",
       answers:
-        "InCase does not monitor or sell your personal data. Your privacy is always respected.",
+        "Yes, we maintain multiple encrypted backups across secure data centers to ensure your documents are always available and protected against data loss.",
+      list: [],
     },
     {
       id: 4,
-      questions: "Are my files backed up?",
+      questions: "Are you compliant with Nigerian data laws?",
       answers:
-        "Yes, your files are automatically backed up to prevent data loss.",
-    },
-    {
-      id: 5,
-      questions: "Is two-factor authentication available?",
-      answers:
-        "Yes, you can enable two-factor authentication for an extra layer of security.",
-    },
-    {
-      id: 6,
-      questions: "What happens if InCase goes offline?",
-      answers:
-        "Your data remains secure, and access is restored once the service is back online.",
+        "Yes, we're fully compliant with the Nigeria Data Protection Regulation (NDPR) and all applicable Nigerian laws.",
+      list: [],
     },
   ],
 
   notarization: [
     {
       id: 0,
-      questions: "What does notarization mean on InCase?",
+      questions: "What is digital notarization?",
       answers:
-        "Notarization verifies the authenticity and timestamp of your uploaded files.",
+        "Digital notarization is the process of having a verified Nigerian lawyer legally certify your document electronically. It provides the same legal validity as traditional paper notarization but is faster, more secure, and more convenient.",
+      list: [],
     },
     {
       id: 1,
-      questions: "Which files can be notarized?",
+      questions: "Is digital notarization legally valid in Nigeria?",
       answers:
-        "You can notarize documents, videos, audio recordings, and images.",
+        "Yes! Our notarization process is fully compliant with Nigerian Notaries Act requirements and is accepted by banks, government agencies, and courts nationwide.",
+      list: [],
     },
     {
       id: 2,
-      questions: "Is notarization legally recognized?",
-      answers:
-        "InCase provides verifiable proof of authenticity that can support legal or professional use cases.",
+      questions: "What are the benefits of digital notarization?",
+      answers: "",
+      list: [
+        "No travel required: Get documents notarized without visiting courthouses",
+        "Time saving: Avoid long queues and waiting times",
+        "Cost effective: Save on transportation and time off work",
+        "Secure process: Digital trail is more secure than paper",
+        "Quick turnaround: Much faster than traditional methods",
+      ],
     },
     {
       id: 3,
-      questions: "Can I notarize files after uploading?",
-      answers:
-        "Yes, notarization can be applied to files already stored in your vault.",
+      questions: "How long does notarization take?",
+      answers: "",
+      list: [
+        "Basic Plan: 48 hours",
+        "Pro Plan: 24 hours",
+        "Business Plan: 12 hours",
+      ],
     },
     {
       id: 4,
-      questions: "Is notarization instant?",
-      answers: "Yes, notarization happens immediately after confirmation.",
+      questions: "How much does notarization cost?",
+      answers:
+        "Please contact us for current notarization pricing as rates may vary based on document type and complexity.",
+      list: [],
     },
     {
       id: 5,
-      questions: "Can notarized files be edited?",
+      questions: "What documents can be notarized?",
       answers:
-        "Any change to a notarized file will invalidate the original notarization.",
+        "We cannot notarize wills, land documents requiring physical presence, or international documents needing apostille. Most documents can be notarized including:",
+      list: [
+        "Affidavits and statutory declarations",
+        "Contracts and agreements",
+        "Certifications and verifications",
+        "Business documents",
+      ],
     },
     {
       id: 6,
-      questions: "Do notarized files expire?",
-      answers: "No, notarized records remain valid unless the file is altered.",
+      questions: "How do you verify your lawyers?",
+      answers:
+        "Every lawyer on our platform undergoes rigorous verification including:",
+      list: [
+        "Practicing license verification",
+        "Background checks",
+        "Ongoing performance monitoring",
+        "Compliance with professional standards",
+      ],
     },
   ],
 
   technical: [
     {
       id: 0,
-      questions: "Which browsers are supported?",
-      answers:
-        "InCase supports modern browsers including Chrome, Firefox, Safari, and Edge.",
+      questions: "What file types are supported?",
+      answers: "We support a wide range of file formats:",
+      list: [
+        "Documents: PDF, DOC, DOCX, TXT, RTF",
+        "Spreadsheets: XLS, XLSX, CSV, ODS",
+        "Presentations: PPT, PPTX, ODP",
+        "Images: JPG, JPEG, PNG, TIFF, BMP",
+        "Videos: MP4, MOV, AVI, WMV, MKV",
+        "Audio: MP3, WAV, M4A, AAC, FLAC",
+        "Others: ZIP, RAR, 7Z, and many more",
+      ],
     },
     {
       id: 1,
-      questions: "Does InCase work offline?",
-      answers:
-        "Currently, an internet connection is required to access your vault.",
+      questions: "Is there a file size limit?",
+      answers: "Yes, to ensure optimal performance:",
+      list: [
+        "Documents: 50MB per file",
+        "Videos: 500MB per file",
+        "Other files: 100MB per file",
+      ],
     },
     {
       id: 2,
-      questions: "Can I export my data?",
-      answers: "Yes, you can download and export your files at any time.",
+      questions: "Can I access my documents offline?",
+      answers:
+        "Yes! You can view important documents marked for offline access without internet connection. Changes will sync when you're back online.",
+      list: [],
     },
     {
       id: 3,
-      questions: "Is there an API available?",
+      questions: "Do you have a web version?",
       answers:
-        "API access is available on enterprise plans for advanced integrations.",
+        "Currently, Incase is available only as a mobile app for iOS and Android devices. We are focused on providing the best mobile experience.",
+      list: [],
     },
     {
       id: 4,
-      questions: "How often is the system updated?",
-      answers:
-        "InCase receives regular updates to improve performance and security.",
-    },
-    {
-      id: 5,
-      questions: "Does InCase support large files?",
-      answers:
-        "Yes, large file support depends on your selected subscription plan.",
-    },
-    {
-      id: 6,
-      questions: "Can I report bugs or issues?",
-      answers: "Yes, you can contact support directly from your dashboard.",
+      questions: "How often do you update the app?",
+      answers: "We release updates regularly with:",
+      list: [
+        "New features and improvements",
+        "Security enhancements",
+        "Bug fixes and performance optimizations",
+        "User-requested features",
+      ],
     },
   ],
 
   account: [
     {
       id: 0,
-      questions: "Can I change my email address?",
-      answers:
-        "Yes, email addresses can be updated from your account settings.",
+      questions: "What plans do you offer?",
+      answers: "",
+      list: [
+        "Basic Plan: Free forever (1GB storage, 5 documents)",
+        "Pro Plan: ₦2,500/month or ₦25,000/year (20GB storage)",
+        "Business Plan: ₦10,000/month or ₦100,000/year (Advanced features)",
+      ],
     },
     {
       id: 1,
-      questions: "How do I upgrade my plan?",
-      answers:
-        "You can upgrade or downgrade your plan at any time from the billing page.",
+      questions: "How do I cancel my subscription?",
+      answers: "You can cancel anytime:",
+      list: [
+        "Go to Settings in the app",
+        "Select 'Subscription'",
+        "Choose 'Cancel Subscription'",
+        "Follow the prompts",
+        "Note: You'll keep access until the end of your billing period",
+      ],
     },
     {
       id: 2,
-      questions: "Can I cancel my subscription?",
+      questions: "Can I get a refund?",
       answers:
-        "Yes, subscriptions can be canceled anytime with no hidden fees.",
+        "We do not offer refunds for subscription payments. Please try our free Basic Plan to ensure Incase meets your needs before upgrading.",
+      list: [],
     },
     {
       id: 3,
-      questions: "Will my data be deleted if I cancel?",
-      answers:
-        "Your data will remain accessible until the end of your billing cycle.",
+      questions: "What payment methods do you accept?",
+      answers: "We accept:",
+      list: [
+        "Paystack",
+        "Credit and debit cards",
+        "Note: All payments are processed securely with encryption",
+      ],
     },
     {
       id: 4,
-      questions: "Can I reactivate my account?",
-      answers: "Yes, you can reactivate your account by logging in again.",
+      questions: "Can I share documents with others?",
+      answers:
+        "Currently, document sharing with other users is not available. Incase is designed for personal document storage and management.",
+      list: [],
     },
     {
       id: 5,
-      questions: "How do I delete my account permanently?",
-      answers: "Permanent deletion can be requested from account settings.",
+      questions: "What happens to my data if I cancel?",
+      answers:
+        "You can download all your documents before canceling. We'll keep your data for 30 days after cancellation in case you change your mind, then it will be permanently deleted.",
+      list: [],
     },
     {
       id: 6,
+      questions: "Can I upgrade or downgrade my plan?",
+      answers:
+        "Plan changes are not currently available. Please choose your plan carefully as you'll need to cancel and resubscribe to change plans.",
+      list: [],
+    },
+  ],
+
+  business: [
+    {
+      id: 0,
       questions: "Do you offer team accounts?",
-      answers: "Team and organization accounts are available on higher plans.",
+      answers:
+        "Team functionality is not currently available. Incase is focused on individual users at this time.",
+      list: [],
+    },
+    {
+      id: 1,
+      questions: "Can we get a custom plan for our organization?",
+      answers:
+        "Currently, we only offer our standard Basic, Pro, and Business plans. Contact us if you have specific organizational needs.",
+      list: [],
+    },
+    {
+      id: 2,
+      questions: "Do you offer training for teams?",
+      answers:
+        "As we currently serve individual users, formal training programs are not available. Our app is designed to be intuitive and easy to use.",
+      list: [],
+    },
+    {
+      id: 3,
+      questions: "Is there an API available?",
+      answers:
+        "API access is not currently available. We are focused on providing the best user experience through our mobile applications.",
+      list: [],
+    },
+  ],
+
+  troubleshooting: [
+    {
+      id: 0,
+      questions: "I forgot my password",
+      answers: `No problem! Click "Forgot Password" on the login screen and follow the instructions to reset your password via email.`,
+      list: [],
+    },
+    {
+      id: 1,
+      questions: "My document upload failed",
+      answers: `Check these common issues:`,
+      list: [
+        "File size within limits (50MB for documents)",
+        "Stable internet connection",
+        "Supported file format",
+        "Available storage space",
+        "Note: If issues persist, contact support.",
+      ],
+    },
+    {
+      id: 2,
+      questions: "I'm not receiving verification emails",
+      answers: "",
+      list: [
+        "Check your spam or junk folder",
+        "Ensure you entered the correct email address",
+        "Try resending the verification email",
+        "Contact support if the issue continues",
+      ],
+    },
+    {
+      id: 3,
+      questions: "The app is running slow",
+      answers: "",
+      list: [
+        "Check your internet connection",
+        "Close and restart the app",
+        "Ensure you have the latest app version",
+        "Clear app cache (in device settings)",
+      ],
     },
   ],
 
   legal: [
     {
       id: 0,
-      questions: "Who owns the content I upload?",
-      answers: "You retain full ownership of all files uploaded to InCase.",
+      questions: "How long do you keep notarization records?",
+      answers:
+        "We maintain notarization records for 10 years as required by Nigerian law to ensure ongoing legal validity.",
+      list: [],
     },
     {
       id: 1,
-      questions: "Does InCase claim rights to my data?",
+      questions: "What's your data retention policy?",
       answers:
-        "No, InCase does not claim ownership or usage rights over your content.",
+        "We retain data while your account is active and for legal requirements. You can request deletion of your data at any time, subject to legal retention periods.",
+      list: [],
     },
     {
       id: 2,
-      questions: "Where is my data stored?",
+      questions: "Do you comply with international standards?",
       answers:
-        "Data is stored on secure servers that comply with international standards.",
+        "Yes, we follow international security best practices and are committed to maintaining the highest standards of data protection.",
+      list: [],
     },
     {
       id: 3,
-      questions: "Is InCase GDPR compliant?",
-      answers:
-        "Yes, InCase follows GDPR and other applicable data protection regulations.",
+      questions: "Still Have Questions?",
+      answers: "Contact Our Support Team",
+      list: ["Email: support@incase.ng"],
     },
     {
       id: 4,
-      questions: "Can my data be shared with third parties?",
-      answers: "Your data is never shared without your explicit consent.",
-    },
-    {
-      id: 5,
-      questions: "What happens in case of a data breach?",
-      answers:
-        "In the unlikely event of a breach, affected users will be notified immediately.",
-    },
-    {
-      id: 6,
-      questions: "Where can I read the full terms?",
-      answers:
-        "You can review our full terms and privacy policy on the legal page.",
+      questions: "Response Times",
+      answers: "",
+      list: [
+        "Basic Plan: 24 hours",
+        "Pro Plan: 4 hours",
+        "Business Plan: 1 hour",
+      ],
     },
   ],
 };

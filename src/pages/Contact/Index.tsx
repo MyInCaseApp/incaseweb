@@ -105,7 +105,7 @@ export default function Contact() {
               Browse FAQs and guides.
             </p>
             <NavLink
-              to=""
+              to="/faqs"
               className="font-poppins font-medium text-sm leading-[150%] tracking-[-2%] underline"
             >
               Visit Help Center
