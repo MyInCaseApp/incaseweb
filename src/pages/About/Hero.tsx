@@ -6,7 +6,6 @@ import ring1 from "../../assets/bluering.png";
 import ring2 from "../../assets/pinkring.png";
 import { motion } from "framer-motion";
 import {
-  appLinksReveal,
   cardContainer,
   ringFloat,
   textContainer,
