@@ -64,7 +64,7 @@ export default function FAQ() {
           <select
             value={tab}
             onChange={(e) => setTab(e.target.value as FaqTab)}
-            className="w-full px-4 py-3 rounded-xl border border-[#E5E7EB] bg-white text-dark font-medium focus:outline-none focus:ring-2 focus:ring-[#227BDA]"
+            className="w-full h-14 px-4 text-base font-fontspringl rounded-xl border border-[#E5E7EB] bg-white text-dark font-medium focus:outline-none focus:ring-2 focus:ring-[#227BDA]"
           >
             {faqTabs.map(({ label, tab }) => (
               <option key={tab} value={tab}>
@@ -74,7 +74,7 @@ export default function FAQ() {
           </select>
         </div>
       </div>
-      <div className="w-fit mx-auto mb-62.25">
+      <div className="lg:w-fit w-full mx-auto mb-62.25">
         <AllFaqs activeTab={tab} />
       </div>
     </section>

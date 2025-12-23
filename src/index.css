@@ -40,3 +40,8 @@ html,
 body {
   scroll-behavior: smooth;
 }
+
+.no-font-symbols {
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "calt" 0, "salt" 0;
+}

@@ -72,8 +72,8 @@ export default function PrivacyPolicy() {
               <div id={item.id} key={i}>
                 {item.name.includes("4") ? (
                   <p className="text-dark font-fontspring font-semibold text-xl mb-3.25">
-                    <span className="font-fredoka font-medium">{4}</span>
-                    {item.name.replace("4", "")}
+                    <span className="font-fredoka font-medium">{i + 1}</span>
+                    {item.name.slice(2)}
                   </p>
                 ) : (
                   <p className="text-dark font-fontspring font-semibold text-xl mb-3.25">
@@ -92,7 +92,7 @@ export default function PrivacyPolicy() {
                       <p className="text-dark font-poppins mb-3.25">
                         {item.name}
                       </p>
-                      <ul className="text-[#778492] font-poppins list-disc text-sm lg:text-base translate-x-5 pr-5.25 lg:pr-0">
+                      <ul className="text-[#778492] font-poppins list-disc text-sm lg:text-base translate-x-6 pr-5.25 lg:pr-0">
                         {item.list.map((list, i) => (
                           <li key={i}>{list}</li>
                         ))}
@@ -104,9 +104,8 @@ export default function PrivacyPolicy() {
             ))}
             <div>
               <p className="text-dark italic font-poppins font-medium">
-                This policy is designed to be clear and transparent about how we
-                handle your data. We believe you should have control over your
-                information while we meet our legal obligations.
+                We recommend reviewing this policy regularly to stay informed
+                about our privacy practices.
               </p>
             </div>
           </section>
