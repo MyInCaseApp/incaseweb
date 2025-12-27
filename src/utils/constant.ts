@@ -407,7 +407,7 @@ export const FaqsBank = {
       id: 3,
       questions: "Still Have Questions?",
       answers: "Contact Our Support Team",
-      list: ["Email: support@incase.ng"],
+      list: ["Email: customer.care@myincaseapp.com"],
     },
     {
       id: 4,
@@ -618,7 +618,7 @@ export const dataRetentionData = [
         sub: "How to Exercise Your Rights",
         name: "Contact our Data Protection Officer:",
         list: [
-          "Email: dpo@InCase.ng",
+          "Email: info@myincaseapp.com",
           "Response Time: Within 15 days",
           "Cost: No charge for standard requests",
         ],
@@ -662,8 +662,8 @@ export const dataRetentionData = [
         sub: "",
         name: "For questions about data retention:",
         list: [
-          "Data Protection Officer: dpo@InCase.ng",
-          "General Support: support@InCase.ng",
+          "Data Protection Officer: info@myincaseapp.com",
+          "General Support: customer.care@myincaseapp.com",
         ],
       },
     ],
@@ -1085,9 +1085,9 @@ export const policyData = [
         name: "",
         sub: "Privacy Inquiries",
         list: [
-          "Email: privacy@InCase.ng",
+          "Email: info@myincaseapp.com",
           "Phone number: +234 911 222 2411",
-          "Data Protection Officer: dpo@InCase.ng",
+          "Data Protection Officer: info@myincaseapp.com",
           "Response time: Within 48 hours",
         ],
       },
@@ -1600,7 +1600,7 @@ export const termsData = [
         name: "",
         sub: "Informal Resolution",
         list: [
-          "We prefer to resolve disputes informally. Contact us at legal@InCase.ng before pursuing formal proceedings",
+          "We prefer to resolve disputes informally. Contact us at info@myincaseapp.com before pursuing formal proceedings",
         ],
       },
       {
@@ -1692,7 +1692,7 @@ export const termsData = [
         name: "",
         sub: "For questions about these Terms:",
         list: [
-          "Email: legal@InCase.ng",
+          "Email: info@myincaseapp.com",
           "Response Time: Within 5 business days",
         ],
       },
@@ -2148,7 +2148,7 @@ export const cookieData = [
       {
         name: "Contact us to exercise your cookie-related rights:",
         sub: "Exercise Your Rights",
-        list: ["Email: privacy@InCase.ng", "Response Time: Within 30 days"],
+        list: ["Email: info@myincaseapp.com", "Response Time: Within 30 days"],
       },
     ],
   },
@@ -2162,7 +2162,7 @@ export const cookieData = [
         name: "",
         sub: "For questions about this Cookie Policy:",
         list: [
-          "Email: privacy@InCase.ng",
+          "Email: info@myincaseapp.com",
           "Address: [Your Company Address]",
           "Attention: Privacy Team",
         ],

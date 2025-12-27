@@ -78,10 +78,14 @@ export default function Pricing() {
             duration={tab === "monthly" ? "month" : "year"}
             text="Make your files legally verified with certified digital notarization."
             features={[
-              "Document notarization — ₦3,000",
-              "Video notarization — ₦5,000",
-              "Audio notarization — ₦3,500",
-              "Timestamped & legally backed verification",
+              "Maritime Documents — ₦15,000",
+              "Certified Ship Document Copy — ₦20,000",
+              "Certify ID/Degree Copies — ₦5,000",
+              "Witness Contracts/Deeds - ₦5,000",
+              "Certify Other Documents - ₦10,000",
+              "Translate Document + Notary Stamp (Short) - ₦15,000",
+              "Translate Document + Notary Stamp (Long) - ₦15,000  + ₦5,000 per extra page",
+              "Extra Documents → Contact for price based on number of document pages",
             ]}
           />
         </div>
