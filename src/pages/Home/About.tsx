@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section className="py-26.5 px-6.5">
       <div className="lg:w-162 mx-auto">
-        <p className="leading-[140%] tracking-[-2%] text-dark font-poppins text-center lg:text-xl">
+        <p className="leading-[145%] tracking-[-2%] text-dark font-poppins text-center lg:text-xl">
           Every year millions of Nigerians lose critical documents to accidents
           theft or simple misplacement. Birth certificates swallowed by floods.
           Property documents lost in moves. Contracts destroyed by fire. These

@@ -1,29 +1,9 @@
-// import React from "react";
-
 import { NavLink } from "react-router-dom";
-import Input from "../../components/Input";
-import { useState } from "react";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
+import Message from "../../components/Message";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    fullname: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
   const containerVariants: Variants = {
     hidden: {},
     show: {
@@ -76,9 +56,9 @@ export default function Contact() {
             </p>
             <a
               className="font-poppins font-medium text-sm leading-[150%] tracking-[-2%] underline"
-              href="mailto:support@InCaseapp.com"
+              href="mailto:customer.care@myincaseapp.com"
             >
-              support@InCaseapp.com
+              customer.care@myincaseapp.com
             </a>
           </div>
           <div className="w-full h-px bg-[#4E95E1]"></div>
@@ -91,9 +71,9 @@ export default function Contact() {
             </p>
             <a
               className="font-poppins font-medium text-sm leading-[150%] tracking-[-2%] underline"
-              href="mailto:business@InCaseapp.com"
+              href="mailto:info@myincaseapp.com"
             >
-              business@InCaseapp.com
+              info@myincaseapp.com
             </a>
           </div>
           <div className="w-full h-px bg-[#4E95E1]"></div>
@@ -105,7 +85,7 @@ export default function Contact() {
               Browse FAQs and guides.
             </p>
             <NavLink
-              to=""
+              to="/faqs"
               className="font-poppins font-medium text-sm leading-[150%] tracking-[-2%] underline"
             >
               Visit Help Center
@@ -113,36 +93,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="lg:w-[55%] w-full py-8 px-5.75 text-left bg-white rounded-[20px]">
-          <div className="grid gap-5">
-            <Input
-              name="fullname"
-              label="Full Name"
-              type="text"
-              placeholder="Enter your full name"
-              value={formData.fullname}
-              onChange={handleChange}
-            />
-            <Input
-              name="email"
-              label="Email Address"
-              type="email"
-              placeholder="Enter your email address"
-              value={formData.email}
-              onChange={handleChange}
-            />
-            <Input
-              message
-              name="message"
-              label="Message"
-              type="message"
-              placeholder="Type your message here..."
-              value={formData.message}
-              onChange={handleChange}
-            />
-            <button className="w-full text-white bg-dark py-4.5 font-fredoka leading-[120%] tracking-[-2%] rounded-full mt-5 cursor-pointer">
-              Submit
-            </button>
-          </div>
+          <Message />
         </div>
       </div>
     </section>

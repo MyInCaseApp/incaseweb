@@ -34,7 +34,7 @@ export default function Solutions() {
               <p className="text-dark font-medium font-fontspringl lg:text-base mb-3">
                 Secure Storage
               </p>
-              <p className="text-[#778492] font-poppins text-sm leading-[120%] tracking-[-5%]">
+              <p className="text-[#778492] font-poppins text-sm leading-[135%] tracking-[-5%]">
                 Store every file type, documents, videos, audio files and others
                 in one secure place with military-grade encryption, and access
                 them anytime across all your devices.
@@ -47,7 +47,7 @@ export default function Solutions() {
               <p className="text-dark font-medium font-fontspringl lg:text-base mb-3">
                 Digital Notarization
               </p>
-              <p className="text-[#778492] font-poppins text-sm leading-[120%] tracking-[-5%]">
+              <p className="text-[#778492] font-poppins text-sm leading-[135%] tracking-[-5%]">
                 Make your digital documents legally stronger with verified
                 Nigerian notaries who add a secure digital stamp and
                 lawyer-backed validation, creating an unforgeable legal trail
@@ -61,7 +61,7 @@ export default function Solutions() {
               <p className="text-dark font-medium font-fontspringl lg:text-base mb-3">
                 Smart Organization
               </p>
-              <p className="text-[#778492] font-poppins text-sm leading-[120%] tracking-[-5%]">
+              <p className="text-[#778492] font-poppins text-sm leading-[135%] tracking-[-5%]">
                 Quickly find any document in seconds with intelligent
                 auto-organization, powerful search across name, date, type, or
                 content, and secure sharing for family, lawyers, or business

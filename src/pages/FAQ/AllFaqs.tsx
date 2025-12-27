@@ -9,6 +9,8 @@ type FaqTab =
   | "notarization"
   | "technical"
   | "account"
+  | "business"
+  | "troubleshooting"
   | "legal";
 
 type AllFaqsProps = {
@@ -70,6 +72,13 @@ export default function AllFaqs({ activeTab }: AllFaqsProps) {
                   <p className="pt-3 leading-[150%] tracking-[-2%] text-sm font-poppins text-white">
                     {item.answers}
                   </p>
+                  <ul className="list-disc pl-5">
+                    {item.list?.map((list, i) => (
+                      <li className="" key={i}>
+                        {list}
+                      </li>
+                    ))}
+                  </ul>
                 </motion.div>
               )}
             </AnimatePresence>

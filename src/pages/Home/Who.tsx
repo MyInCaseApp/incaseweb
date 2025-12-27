@@ -82,7 +82,7 @@ export default function Who() {
             </div>
             <div className="p-2.5">
               <p className="text-xl text-white leading-[120%] tracking-[-2%] font-fontspringm">
-                FFor Students and Graduates
+                For Students and Graduates
               </p>
               <div className="mt-5 grid gap-2">
                 {[

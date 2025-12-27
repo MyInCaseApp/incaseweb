@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
-import { dataRetentionData, dataRetentionLinks } from "../../utils/constant";
+import { cookieData, cookieLinks, cookies } from "../../utils/constant";
 import { useLocation } from "react-router-dom";
 import FileUpdateDetails from "../../components/FileUpdateDetails";
 
@@ -45,8 +45,8 @@ export default function Cookies() {
       </motion.div>
 
       <section className="lg:flex gap-34.5 mt-19.5">
-        <div className="hidden w-[20%] lg:flex flex-col text-left items-start gap-4">
-          {dataRetentionLinks.map((item, i) => (
+        <div className="hidden w-[20%] lg:flex flex-col text-left items-start gap-4 no-font-symbols">
+          {cookieLinks.map((item, i) => (
             <a
               key={i}
               className={`${
@@ -68,45 +68,100 @@ export default function Cookies() {
           />
 
           <section className="mt-7.25 grid gap-10">
-            {dataRetentionData?.map((item, i) => (
-              <div id={item.id} key={i}>
-                {item.name.includes("4") ? (
-                  <p className="text-dark font-fontspring font-semibold text-xl mb-3.25">
-                    <span className="font-fredoka font-medium">{4}</span>
-                    {item.name.replace("4", "")}
+            {cookieData?.map((item, i) =>
+              i !== 3 ? (
+                <div id={item.id} key={i}>
+                  {item.name.includes("4") ? (
+                    <p className="text-dark font-fontspring font-semibold text-xl mb-3.25">
+                      <span className="font-fredoka font-medium">{i + 1}</span>
+                      {item.name.slice(2)}
+                    </p>
+                  ) : (
+                    <p className="text-dark font-fontspring font-semibold text-xl mb-3.25">
+                      {item.name}
+                    </p>
+                  )}
+                  <p className="text-[#778492] font-poppins mb-3.25">
+                    {item.description}
                   </p>
-                ) : (
-                  <p className="text-dark font-fontspring font-semibold text-xl mb-3.25">
-                    {item.name}
-                  </p>
-                )}
-                <p className="text-[#778492] font-poppins mb-3.25">
-                  {item.description}
-                </p>
-                <div className="grid gap-3.25">
-                  {item.sub.map((item, i) => (
-                    <div key={i}>
-                      <p className="text-dark font-poppins font-medium">
-                        {item.sub}
-                      </p>
-                      <p className="text-dark font-poppins mb-3.25">
-                        {item.name}
-                      </p>
-                      <ul className="text-[#778492] font-poppins list-disc text-sm lg:text-base translate-x-5 pr-5.25 lg:pr-0">
-                        {item.list.map((list, i) => (
-                          <li key={i}>{list}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
+                  <div className="grid gap-3.25">
+                    {item.sub.map((item, i) => (
+                      <div key={i}>
+                        <p className="text-dark font-poppins font-medium">
+                          {item.sub}
+                        </p>
+                        <p className="text-dark font-poppins mb-3.25">
+                          {item.name}
+                        </p>
+                        <ul className="text-[#778492] font-poppins list-disc text-sm lg:text-base translate-x-6 pr-5.25 lg:pr-0">
+                          {item.list.map((list, i) => (
+                            <li key={i}>{list}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ) : (
+                <div id={item.id} key={i}>
+                  <p className="text-dark font-fontspring font-semibold text-xl mb-3.25">
+                    <span className="font-fredoka font-medium">{i + 1}</span>
+                    {item.name.slice(1)}
+                  </p>
+                  <div>
+                    <div className="mt-6">
+                      <div className="border border-[#778492] rounded-xl overflow-hidden">
+                        <table className="w-full border-collapse text-sm">
+                          <thead>
+                            <tr>
+                              <th className="border border-[#778492] px-4 py-3 text-[9px] lg:text-base text-left font-medium text-dark">
+                                Cookie Name
+                              </th>
+                              <th className="border border-[#778492] px-4 py-3 text-[9px] lg:text-base text-left font-medium text-dark">
+                                Purpose
+                              </th>
+                              <th className="border border-[#778492] px-4 py-3 text-[9px] lg:text-base text-left font-medium text-dark">
+                                Type
+                              </th>
+                              <th className="border border-[#778492] px-4 py-3 text-[9px] lg:text-base text-left font-medium text-dark">
+                                Duration
+                              </th>
+                            </tr>
+                          </thead>
+
+                          <tbody>
+                            {cookies.map((cookie, index) => (
+                              <tr key={index} className="text-[#778492]">
+                                <td className="border border-[#778492] px-4 py-3  text-[8px] lg:text-sm">
+                                  {cookie.name}
+                                </td>
+                                <td className="border border-[#778492] px-4 py-3  text-[8px] lg:text-sm">
+                                  {cookie.purpose}
+                                </td>
+                                <td className="border border-[#778492] px-4 py-3  text-[8px] lg:text-sm">
+                                  {cookie.type}
+                                </td>
+                                <td className="border border-[#778492] px-4 py-3  text-[8px] lg:text-sm">
+                                  {cookie.duration}
+                                </td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )
+            )}
             <div>
-              <p className="text-dark italic font-poppins font-medium">
-                This policy is designed to be clear and transparent about how we
-                handle your data. We believe you should have control over your
-                information while we meet our legal obligations.
+              <p className="text-dark font-poppins font-semibold text-xl mb-3.25">
+                Acknowledgement
+              </p>
+              <p className="text-[#778492] font-poppins text-sm lg:text-base">
+                By using the Incase mobile application, you acknowledge that you
+                have read, understood, and agree to be bound by these terms of
+                service.
               </p>
             </div>
           </section>

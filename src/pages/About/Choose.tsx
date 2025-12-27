@@ -29,7 +29,7 @@ export default function Choose() {
               <p className="font-fontspring text-dark font-semibold text-xl leading-[140%] tracking-[-5%]">
                 {item.name}
               </p>
-              <p className="mt-3 font-poppins text-[#778492] leading-[140%] tracking-[-2%]">
+              <p className="mt-3 font-poppins text-[#778492] leading-[145%] tracking-[-2%]">
                 {item.text}
               </p>
             </div>
