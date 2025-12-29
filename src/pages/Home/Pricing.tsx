@@ -7,11 +7,11 @@ export default function Pricing() {
   return (
     <div className="my-50 mx-auto lg:w-180">
       <div className="text-center">
-        <p className="text-[#B7BCC1] text-sm font-poppins leading-[145%] tracking-[-2%]">
+        <p className="text-[#B7BCC1] text-lg font-poppins leading-[145%] tracking-[-2%]">
           OUR PRICING
         </p>
         <p className="font-medium font-fontspringm text-[32px] text-white">
-          Transparent and Affordable
+          Affordable and Valuable
         </p>
 
         <div className="bg-[#212122] p-2.5 w-fit rounded-full mx-auto my-12.5">
@@ -31,41 +31,46 @@ export default function Pricing() {
           >
             Yearly{" "}
             <span className="py-0.75 px-1.5 bg-[#227BDA] text-white rounded-full text-xs ml-2.5">
-              Save 16%
+              Save 10%
             </span>
           </button>
         </div>
 
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
           <PriceCard
-            price={tab === "monthly" ? 1500 : 25000}
+            price={tab === "monthly" ? "0" : "0"}
             name="Basic Plan"
             duration={tab === "monthly" ? "month" : "year"}
             text="Get started with essential storage and security to keep your important files safe."
             features={[
-              "500mb secure storage",
-              "Basic document protection",
-              "Access from any device",
+              "10mb file upload limit",
+              "Basic document management",
+              "Standard security features",
+              "Email support",
             ]}
           />
           <PriceCard
             popular
-            price={tab === "monthly" ? 3500 : 37000}
-            name="Pro Plan"
+            price={tab === "monthly" ? 2500 : 27000}
+            name="Premium Plan"
             duration={tab === "monthly" ? "month" : "year"}
             text="More space, stronger protection, and premium features to power your digital vault. "
             features={[
-              "20gb storage",
-              "Advanced encryption",
-              "Priority customer support",
+              "50mb file upload limit",
+              "Unlimited documents and folders",
+              "Advanced security features",
+              "Priority email support",
+              "Advanced search",
+              "Export and backup",
             ]}
           />
           <PriceCard
-            price={tab === "monthly" ? 10000 : 100000}
+            price={tab === "monthly" ? 10000 : 108000}
             name="Business Plan"
             duration={tab === "monthly" ? "month" : "year"}
             text="High-capacity storage and enterprise-level tools for teams that manage large volumes of documents."
             features={[
+              "All features in premium plan",
               "100gb storage",
               "Advanced encryption",
               "Priority customer support",

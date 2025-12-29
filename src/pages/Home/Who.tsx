@@ -17,8 +17,8 @@ export default function Who() {
               Who is InCase for?
             </p>
             <p className="text-[#B7BCC1] font-poppins leading-[145%] tracking-[-2%] mt-3.5 mb-10">
-              Everyone! Because we deserve a secure place for life's important
-              information
+              Everyone! Because we all deserve a secure place for all our
+              important information
             </p>
             <div className="flex">
               <AppLinks />
@@ -108,7 +108,7 @@ export default function Who() {
       <div className="lg:w-337.25 lg:h-172.25 h-305 lg:flex justify-between mx-auto relative">
         <div className="lg:w-106.75 mb-11.25 lg:mb-0 text-white lg:absolute top-[45%] lg:-translate-y-1/2">
           <p className="font-fontspringl text-white lg:text-[64px] text-[32px] tracking-[-2%] leading-[100%] font-bold">
-            Security You <br className="lg:hidden" /> Can Trust
+            A Secure vault You Can Trust
           </p>
           <p className="mt-4 mb-8 font-fredoka lg:text-base text-sm">
             We protect your documents like they're our own
@@ -127,22 +127,22 @@ export default function Who() {
           <SecurityTips
             text="Your files are encrypted before they leave your device"
             title="End to End Encryption"
-            custom="-rotate-2"
+            custom=""
           />
           <SecurityTips
             text="Fully compliant with NDPR regulations"
             title="Nigerian Data Compliance"
-            custom="rotate-2"
+            custom=""
           />
           <SecurityTips
             text="Automatic backups ensure you never lose documents"
             title="Regular Backups"
-            custom="-rotate-2"
+            custom=""
           />
           <SecurityTips
             text="See who accessed your documents and when"
             title="Access Logs"
-            custom="rotate-2"
+            custom=""
           />
         </div>
       </div>

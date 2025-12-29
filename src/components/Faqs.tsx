@@ -16,9 +16,9 @@ export default function Faqs() {
     },
     {
       id: 1,
-      questions: "Is Incase really free to start?",
+      questions: "Can I afford InCase?",
       answers:
-        "Yes! Our Basic Plan is completely free with 1GB storage and capacity for 5 documents. No credit card required to start.",
+        "Yes! Our Basic Plan is a one-off payment of ___ naira giving you access to 2GB storage and standard security features. Payments are made through a secure channels.",
       list: [],
     },
     {
