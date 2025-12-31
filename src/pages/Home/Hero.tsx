@@ -26,7 +26,7 @@ export default function Hero() {
           >
             <p>Secure Storage</p>
             <BsDot size={30} />
-            <p>Legal Notarization</p>
+            <p>Notarization (Legal)</p>
             <BsDot size={30} />
             <p>Instant Access</p>
           </motion.div>

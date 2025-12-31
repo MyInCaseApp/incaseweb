@@ -48,7 +48,9 @@ export default function Footer() {
       <div className="lg:px-31.75 px-5.25 flex items-center justify-center gap-7">
         <div className="flex items-center gap-1.5">
           <BsFillShieldLockFill color="#227BDA" size={12} />
-          <p className="text-sm text-dark font-poppins">Bank-Level Security</p>
+          <p className="text-sm text-dark font-poppins">
+            End to end Encryption
+          </p>
         </div>
         <div className="flex items-center gap-1.5">
           <BsFillShieldLockFill color="#227BDA" size={12} />
@@ -64,7 +66,7 @@ export default function Footer() {
         </p>
       </div>
       <p className="px-5.25 font-poppins text-sm text-[#778492] text-center lg:w-93.5 mx-auto leading-[120%] tracking-[-5%]">
-        Join thousands of Nigerians who trust InCase with their most important
+        Join millions of users who trust InCase with their most important
         documents
       </p>
       <div className="lg:px-31.75 px-5.25 lg:my-8 my-10">
@@ -85,7 +87,7 @@ export default function Footer() {
       <div className="w-full h-px bg-[#77849229] lg:my-8 my-10"></div>
       <div className="lg:px-31.75 px-5.25">
         <p className="font-poppins text-[#778492] text-center text-sm leading-[120%] tracking-[-5%]">
-          © {date?.getFullYear()} InCase Technologies. All rights reserved.
+          © {date?.getFullYear()} Novaspire Tech Solutions. All rights reserved.
         </p>
       </div>
     </footer>

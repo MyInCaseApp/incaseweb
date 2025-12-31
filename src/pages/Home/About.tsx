@@ -28,7 +28,7 @@ export default function About() {
           <img src={about} className="w-full h-full" alt="" />
         </div>
         <p className="text-center font-fredoka leading-[120%] font-medium text-[#778492]">
-          You can store anything in InCase
+          You can store everything on InCase
         </p>
       </div>
     </section>

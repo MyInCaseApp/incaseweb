@@ -50,7 +50,7 @@ export default function PriceCard({
               transition={{ duration: 0.4, ease: "easeInOut" }}
               className="font-medium text-[32px]"
             >
-              ₦ {formatAmount(price)}
+              {Number(price) === 0 ? "Free" : `₦ ${formatAmount(price)}`}
             </motion.span>
             <motion.span
               initial={{ opacity: 0, y: 10 }}
@@ -85,10 +85,10 @@ export default function PriceCard({
         {features?.map((feature, i) => (
           <div
             key={i}
-            className="flex items-center gap-1 font-poppins text-sm leading-[145%] tracking-[-2%] text-[#D3D3D3]"
+            className="flex gap-1 font-poppins text-sm leading-[145%] tracking-[-2%] text-[#D3D3D3]"
           >
             <IoCheckmarkCircleOutline color="#A1A4A9" size={20} />
-            <p>{feature}</p>
+            <p className="flex-1">{feature}</p>
           </div>
         ))}
       </div>

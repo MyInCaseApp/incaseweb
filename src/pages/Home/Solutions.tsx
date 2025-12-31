@@ -36,8 +36,8 @@ export default function Solutions() {
               </p>
               <p className="text-[#778492] font-poppins text-sm leading-[135%] tracking-[-5%]">
                 Store every file type, documents, videos, audio files and others
-                in one secure place with military-grade encryption, and access
-                them anytime across all your devices.
+                in one secure place with end-end encryption, and access them
+                anytime across all your devices.
               </p>
               <div className="w-63.75 absolute bottom-0 -translate-x-1/2 left-1/2">
                 <img src={iphone} className="w-full" alt="iphone" />
@@ -48,10 +48,9 @@ export default function Solutions() {
                 Digital Notarization
               </p>
               <p className="text-[#778492] font-poppins text-sm leading-[135%] tracking-[-5%]">
-                Make your digital documents legally stronger with verified
-                Nigerian notaries who add a secure digital stamp and
-                lawyer-backed validation, creating an unforgeable legal trail
-                that’s even safer than paper.
+                Make your digital documents legally stronger with our in-app
+                commissioned notaries who add a secure digital stamp, creating
+                an authentic digital paper.
               </p>
               <div className="w-63.75 absolute bottom-0 -translate-x-1/2 left-1/2">
                 <img src={cert} className="w-full" alt="iphone" />
@@ -83,16 +82,15 @@ export default function Solutions() {
               <div className="mt-7.5 grid gap-6">
                 <Cards
                   name="Upload"
-                  text="Upload your School Certificates, Car Papers, Certificate
-                      of Occupancy and other existing files"
+                  text="Upload your School Certificates, Car Papers, Legal Documents, Confidential Notes, and other files"
                 />
                 <Cards
                   name="Organize and Secure"
-                  text="Files are automatically encrypted and organized by type"
+                  text="Every document on InCase is automatically encrypted and organized according to personalized folders"
                 />
                 <Cards
-                  name="Access or Notarize"
-                  text="View anytime or make your documents legally stronger with one tap"
+                  name="Access"
+                  text="Access your confidential notes and documents anywhere and anytime"
                 />
               </div>
             </div>
