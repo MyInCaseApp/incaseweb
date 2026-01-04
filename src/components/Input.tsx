@@ -37,15 +37,25 @@ export default function Input({
       </label>
 
       {message ? (
-        <textarea
-          id={name}
-          name={name}
-          placeholder={placeholder}
-          value={value}
-          onChange={onChange}
-          rows={6}
-          className={`${baseClasses} py-3 border-[#D2D6DB] ${focusClasses}`}
-        />
+        <div className="relative">
+          <textarea
+            id={name}
+            name={name}
+            placeholder={placeholder}
+            value={value}
+            onChange={onChange}
+            rows={6}
+            maxLength={5000}
+            className={`${baseClasses} py-3 border-[#D2D6DB] ${focusClasses}`}
+          />
+          <p
+            className={`absolute bottom-2 right-2 text-sm ${
+              value.length > 4800 ? "text-red-500" : "text-gray-400"
+            }`}
+          >
+            {value.length}/5000
+          </p>
+        </div>
       ) : (
         <input
           id={name}

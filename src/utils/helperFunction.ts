@@ -11,34 +11,71 @@ export function formatAmount(amount: number | string): string {
 
 export async function encryptPayload(
   payload: object,
-  secretKey: string
+  masterKeyHex: string
 ): Promise<string> {
   const encoder = new TextEncoder();
 
-  const keyBuffer = await crypto.subtle.digest(
-    "SHA-256",
-    encoder.encode(secretKey)
+  const iv = crypto.getRandomValues(new Uint8Array(16));
+  const salt = crypto.getRandomValues(new Uint8Array(64));
+
+  const masterKeyBytes = hexToBytes(masterKeyHex).buffer.slice(0);
+
+  const baseKey = await crypto.subtle.importKey(
+    "raw",
+    masterKeyBytes as ArrayBuffer,
+    "PBKDF2",
+    false,
+    ["deriveKey"]
   );
 
-  const key = await crypto.subtle.importKey(
-    "raw",
-    keyBuffer,
-    { name: "AES-GCM" },
+  const aesKey = await crypto.subtle.deriveKey(
+    {
+      name: "PBKDF2",
+      salt,
+      iterations: 100000,
+      hash: "SHA-256",
+    },
+    baseKey,
+    { name: "AES-GCM", length: 256 },
     false,
     ["encrypt"]
   );
 
-  const iv = crypto.getRandomValues(new Uint8Array(12));
-
-  const encrypted = await crypto.subtle.encrypt(
+  const encryptedBuffer = await crypto.subtle.encrypt(
     { name: "AES-GCM", iv },
-    key,
+    aesKey,
     encoder.encode(JSON.stringify(payload))
   );
 
-  const combined = new Uint8Array(iv.length + encrypted.byteLength);
-  combined.set(iv);
-  combined.set(new Uint8Array(encrypted), iv.length);
+  const encryptedBytes = new Uint8Array(encryptedBuffer);
+
+  const authTag = encryptedBytes.slice(encryptedBytes.length - 16);
+  const ciphertext = encryptedBytes.slice(0, encryptedBytes.length - 16);
+
+  const combined = new Uint8Array(
+    iv.length + salt.length + authTag.length + ciphertext.length
+  );
+
+  let offset = 0;
+  combined.set(iv, offset);
+  offset += iv.length;
+  combined.set(salt, offset);
+  offset += salt.length;
+  combined.set(authTag, offset);
+  offset += authTag.length;
+  combined.set(ciphertext, offset);
 
   return btoa(String.fromCharCode(...combined));
+}
+
+function hexToBytes(hex: string): Uint8Array {
+  if (!/^[0-9a-fA-F]{64}$/.test(hex)) {
+    throw new Error("Master key must be a 32-byte HEX string (64 hex chars)");
+  }
+
+  const bytes = new Uint8Array(32);
+  for (let i = 0; i < 32; i++) {
+    bytes[i] = parseInt(hex.slice(i * 2, i * 2 + 2), 16);
+  }
+  return bytes;
 }
