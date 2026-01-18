@@ -11,40 +11,39 @@ export function formatAmount(amount: number | string): string {
 
 export async function encryptPayload(
   payload: object,
-  masterKeyHex: string
+  masterKeyHex: string,
 ): Promise<string> {
   const encoder = new TextEncoder();
 
   const iv = crypto.getRandomValues(new Uint8Array(16));
   const salt = crypto.getRandomValues(new Uint8Array(64));
 
-  const masterKeyBytes = hexToBytes(masterKeyHex).buffer.slice(0);
-
+  const masterKeyBytes = hexToBytes(masterKeyHex);
   const baseKey = await crypto.subtle.importKey(
     "raw",
-    masterKeyBytes as ArrayBuffer,
+    masterKeyBytes.buffer as ArrayBuffer,
     "PBKDF2",
     false,
-    ["deriveKey"]
+    ["deriveKey"],
   );
 
   const aesKey = await crypto.subtle.deriveKey(
     {
       name: "PBKDF2",
-      salt,
-      iterations: 100000,
+      salt: salt,
+      iterations: 10000,
       hash: "SHA-256",
     },
     baseKey,
     { name: "AES-GCM", length: 256 },
     false,
-    ["encrypt"]
+    ["encrypt"],
   );
 
   const encryptedBuffer = await crypto.subtle.encrypt(
     { name: "AES-GCM", iv },
     aesKey,
-    encoder.encode(JSON.stringify(payload))
+    encoder.encode(JSON.stringify(payload)),
   );
 
   const encryptedBytes = new Uint8Array(encryptedBuffer);
@@ -53,7 +52,7 @@ export async function encryptPayload(
   const ciphertext = encryptedBytes.slice(0, encryptedBytes.length - 16);
 
   const combined = new Uint8Array(
-    iv.length + salt.length + authTag.length + ciphertext.length
+    iv.length + salt.length + authTag.length + ciphertext.length,
   );
 
   let offset = 0;
@@ -69,12 +68,8 @@ export async function encryptPayload(
 }
 
 function hexToBytes(hex: string): Uint8Array {
-  if (!/^[0-9a-fA-F]{64}$/.test(hex)) {
-    throw new Error("Master key must be a 32-byte HEX string (64 hex chars)");
-  }
-
-  const bytes = new Uint8Array(32);
-  for (let i = 0; i < 32; i++) {
+  const bytes = new Uint8Array(hex.length / 2);
+  for (let i = 0; i < bytes.length; i++) {
     bytes[i] = parseInt(hex.slice(i * 2, i * 2 + 2), 16);
   }
   return bytes;
