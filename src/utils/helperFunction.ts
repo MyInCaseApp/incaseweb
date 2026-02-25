@@ -13,6 +13,9 @@ export async function encryptPayload(
   payload: object,
   masterKeyHex: string,
 ): Promise<string> {
+  if (!masterKeyHex) {
+    throw new Error("Encryption key is not configured. Please check your environment variables.");
+  }
   const encoder = new TextEncoder();
 
   const iv = crypto.getRandomValues(new Uint8Array(16));

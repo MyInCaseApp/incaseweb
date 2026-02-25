@@ -84,7 +84,7 @@ export default function Faqs() {
               </motion.div>
             </div>
 
-            <AnimatePresence initial={false}>
+            <AnimatePresence initial={false} mode="sync">
               {isOpen && (
                 <motion.div
                   key="content"

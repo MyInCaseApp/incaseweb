@@ -33,7 +33,7 @@ export default function AllFaqs({ activeTab }: AllFaqsProps) {
 
         return (
           <motion.div
-            key={item.id}
+            key={`${activeTab}-${item.id}`}
             layout
             className={`w-full rounded-xl lg:py-5 py-4 lg:px-5 px-4 cursor-pointer text-left ${
               isOpen ? "bg-[#227BDA] text-white" : "bg-white text-dark"
