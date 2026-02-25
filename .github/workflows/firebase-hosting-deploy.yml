@@ -34,4 +34,5 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_INCASE_7345F }}
           channelId: live
           projectId: incase-7345f
+          target: incaseweb
 
