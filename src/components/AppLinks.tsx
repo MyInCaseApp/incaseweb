@@ -6,7 +6,7 @@ export default function AppLinks() {
   return (
     <div className="flex items-center justify-center gap-2">
       <motion.a
-        href="http://"
+        href="https://play.google.com/store/apps/details?id=com.app.incaseapp"
         target="_blank"
         rel="noopener noreferrer"
         className="w-[130.6px] h-[38.7px] block"
@@ -21,7 +21,7 @@ export default function AppLinks() {
       </motion.a>
 
       <motion.a
-        href="http://"
+        href="https://apps.apple.com/us/app/incase-app/id6757753041"
         target="_blank"
         rel="noopener noreferrer"
         className="w-[116.09px] h-[38.7px] block"
